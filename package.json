@@ -1,0 +1,43 @@
+{
+  "name": "@lcooper/hooks",
+  "version": "0.0.0",
+  "description": "Collection of useful React hooks",
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks"
+  ],
+  "author": "Lucian Cooper <cooperlucian@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luciancooper/hooks.git"
+  },
+  "commitlint": {
+    "extends": [
+      "@lcooper"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@lcooper/commitlint-config": "^1.1.0",
+    "@lcooper/eslint-config": "^1.1.2",
+    "@lcooper/eslint-config-react": "^1.1.1",
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.8",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3"
+  }
+}

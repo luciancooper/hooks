@@ -51,4 +51,4 @@ yarn-error.log*
 *.tgz
 
 # dist directory
-dist
+lib

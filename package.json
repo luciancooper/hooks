@@ -7,6 +7,17 @@
     "hooks",
     "react-hooks"
   ],
+  "main": "lib/hooks.cjs.js",
+  "module": "lib/hooks.esm.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf lib && rollup -c"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Lucian Cooper <cooperlucian@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -35,6 +46,8 @@
     "@lcooper/commitlint-config": "^1.1.0",
     "@lcooper/eslint-config": "^1.1.2",
     "@lcooper/eslint-config-react": "^1.1.1",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
     "eslint": "^7.15.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsdoc": "^30.7.8",
@@ -42,6 +55,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.5",
     "lint-staged": "^10.5.3",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.34.2"
   }
 }

@@ -189,17 +189,17 @@
   dependencies:
     "@commitlint/config-conventional" "^10.0.0"
 
-"@lcooper/eslint-config-react@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@lcooper/eslint-config-react/-/eslint-config-react-1.1.1.tgz#b56206a91ba436ae8989827dd48c2bdc53498f68"
-  integrity sha512-zRDFtf94Kx5W1o+bWyjm2mimfrP5yr/SUaM35LStT4QUiivzJS6HuWrok4T67plaLwAY0qjv3crWfMod0Xtk2w==
-  dependencies:
-    "@lcooper/eslint-config" "1.1.2"
-
-"@lcooper/eslint-config@1.1.2", "@lcooper/eslint-config@^1.1.2":
+"@lcooper/eslint-config-react@^1.1.2":
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@lcooper/eslint-config/-/eslint-config-1.1.2.tgz#1eb90c96851715e4a43e3e91d3e4cb816e709d2c"
-  integrity sha512-o6JGZwmS2ZqGvHPZ9oXrrgav3P9oM7xHbZKIeHjT3XH2TVfIrmMyTpFPV4+ScoFQjKypx5BmHAgY91Hmd8QDaw==
+  resolved "https://registry.yarnpkg.com/@lcooper/eslint-config-react/-/eslint-config-react-1.1.2.tgz#bf478ae7077ffa68ed74c7a17bc293497546142b"
+  integrity sha512-PMGfF6trMvKrAjfTTnEgQnHo1rylBxi3ksGU9YUVD2ZclRBWDCQrY27wCV76kMtY/7BwfEq81dBSKy2m8aa6RQ==
+  dependencies:
+    "@lcooper/eslint-config" "1.1.3"
+
+"@lcooper/eslint-config@1.1.3", "@lcooper/eslint-config@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@lcooper/eslint-config/-/eslint-config-1.1.3.tgz#0dcc415a87390adf388b35b64785bf301f9db157"
+  integrity sha512-B2oIvmJZGMpsvXhf2ZxKmQoJszibXblXPbpsrqDkorsKwLsHbUDgRaTLFVORwekpt7s2B3eCSOCpbacTYll8ZA==
   dependencies:
     eslint-config-airbnb-base "^14.2.0"
 

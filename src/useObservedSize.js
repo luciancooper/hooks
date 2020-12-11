@@ -1,12 +1,13 @@
 import { useState, useRef, useLayoutEffect } from 'react';
 
 /**
- * Hook that tracks an element's size using the Resize Observer API
- * @param {Ref} target - React ref containing the target DOM element
- * @returns {Object} - contentRect from a ResizeObserverEntry
+ * Hook to track an element's size using the Resize Observer API
+ * @returns {Array} - [targetRef, contentRect from a ResizeObserverEntry]
  */
-export default function useObservedSize(target) {
+export default function useObservedSize() {
     const [entry, setEntry] = useState({}),
+        // utilize useState hook as a callback ref
+        [target, targetRef] = useState(null),
         // ref to store ResizeObserver instance
         observer = useRef(null);
 
@@ -17,8 +18,8 @@ export default function useObservedSize(target) {
         observer.current = new ResizeObserver(([e]) => {
             setEntry(e);
         });
-        if (target.current) {
-            observer.current.observe(target.current);
+        if (target) {
+            observer.current.observe(target);
         }
         // return cleanup function
         return () => {
@@ -28,6 +29,6 @@ export default function useObservedSize(target) {
         };
     }, [target]);
 
-    // return entry contentRect or an empty object
-    return entry.contentRect || {};
+    // return target callback ref & entry contentRect
+    return [targetRef, entry.contentRect || {}];
 }

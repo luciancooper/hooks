@@ -20,5 +20,8 @@ export default {
         nodeResolve(),
         commonjs(),
     ],
-    external: ['react'],
+    external: Object.keys({
+        ...pkg.dependencies,
+        ...pkg.peerDependencies,
+    }),
 };

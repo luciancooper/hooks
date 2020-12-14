@@ -9,11 +9,13 @@
   ],
   "main": "lib/hooks.cjs.js",
   "module": "lib/hooks.esm.js",
+  "sideEffects": false,
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "rimraf lib && rollup -c"
+    "build": "rimraf lib && rollup -c",
+    "prepublish": "yarn build"
   },
   "publishConfig": {
     "access": "public"
